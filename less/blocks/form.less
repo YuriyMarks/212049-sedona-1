@@ -36,6 +36,14 @@
     margin: 20px 20px 30px 20px;
   }
 
+  &__wrapper-impression{
+    margin: 25px 20px 15px 20px;
+  }
+
+  &__wrapper-sight{
+    margin: 25px 20px 15px 20px;
+  }
+
   &__field{
     box-sizing: border-box;
     width: 100%;
@@ -59,14 +67,6 @@
     margin-bottom: 10px;
   }
 
-  &__wrapper-impression{
-    margin: 25px 20px 15px 20px;
-  }
-
-  &__wrapper-sight{
-    margin: 25px 20px 15px 20px;
-  }
-
   &__label{
     padding-left: 55px;
 
@@ -82,5 +82,159 @@
 
     border: none;
     background-color: #f2f2f2;
+  }
+}
+
+@media(min-width: 768px){
+  .form{
+    display: flex;
+    flex-wrap: wrap;
+
+    &__caption{
+      font-size: 21px;
+    }
+
+    &__item:nth-of-type(1) h3{
+      text-align: left;
+      padding-left: 10px;
+    }
+
+    &__item{
+      padding: 0;
+      margin-left: 60px;
+      border: none;
+    }
+
+    &__wrapper-introduce{
+      margin: 20px 0 0 10px;
+    }
+
+    &__wrapper-contacts{
+      margin: 20px 0 30px 0;
+    }
+
+    &__wrapper-impression{
+      margin: 25px 0 15px 0;
+    }
+
+    &__wrapper-sight{
+      margin: 25px 0 15px 0;
+    }
+
+    &__impression{
+      order: -1;
+    }
+
+    &__contacts{
+      width: 649px;
+    }
+
+    &__introduce{
+       padding-left: 10px;
+    }
+
+    &__wrapper-sight{
+      display: flex;
+    }
+
+    &__wrapper-item{
+      margin-bottom: 35px;
+    }
+
+    &__division-wrapper:nth-child(1){
+      margin-right: 70px;
+    }
+
+    &__sight{
+      margin: 55px auto 70px;
+    }
+
+    &__item:nth-of-type(4) h3{
+      width: 290px;
+      margin: 0 auto;
+    }
+
+    &__textarea{
+      width: 649px;
+      height: 160px;
+      margin: 0 0 50px 0;
+    }
+  }
+}
+
+@media(min-width: 1200px){
+  .form{
+    justify-content: space-between;
+
+    &__item{
+      margin-left: 120px;
+    }
+
+    &__introduce{
+      width: 400px;
+      margin-right: 120px;
+    }
+
+    &__impression{
+      width: 400px;
+    }
+
+    &__wrapper--mod{
+      display: flex;
+      justify-content: space-between;
+      width: 960px;
+    }
+
+    &__wrapper-contacts{
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    &__division-wrapper{
+      display: flex;
+      justify-content: space-around;
+      width: 480px;
+    }
+
+    &__name--mod{
+      margin-left: 0;
+      margin-right: 5px;
+    }
+
+    &__field--mod{
+      width: 317px;
+    }
+
+    &__item:nth-of-type(1) h3{
+      margin-bottom: 60px;
+    }
+
+    &__item:nth-of-type(2) h3{
+      margin-top: 70px;
+      margin-bottom: 80px;
+    }
+
+    &__item:nth-of-type(3) h3{
+      margin-bottom: 65px;
+    }
+
+    &__item:nth-of-type(4) h3{
+      margin-top: 55px;
+      margin-bottom: 45px;
+    }
+
+    &__item:nth-of-type(5) h3{
+      margin-bottom: 60px;
+    }
+
+    &__textarea{
+      width: 960px;
+      height: 160px;
+    }
+
+    &__hide{
+      display: none;
+    }
   }
 }

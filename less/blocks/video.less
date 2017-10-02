@@ -8,8 +8,8 @@
 
   &__appeal{
     margin-bottom: 35px;
-    padding-left: 40px;
-    padding-right: 40px;
+    width: 214px;
+    margin: 0 auto 35px;
 
     font-size: 18px;
     font-weight: 700;
@@ -22,5 +22,39 @@
     padding-right: 40px;
 
     line-height: 24px;
+  }
+}
+
+@media(min-width: 768px){
+  .video{
+    position: relative;
+    border: none;
+
+    &__appeal{
+      width: 380px;
+      margin: 35px auto 35px;
+
+      font-size: 30px;
+    }
+
+    &__text{
+      width: 425px;
+      margin: 0 auto 80px;
+    }
+
+    &__image img{
+      width: 648px;
+      height: 500px;
+    }
+  }
+}
+
+@media(min-width: 1200px){
+  .video{
+
+    &__image img{
+      width: 800px;
+      height: 500px;
+    }
   }
 }

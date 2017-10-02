@@ -39,3 +39,62 @@
     display: block;
   }
 }
+
+@media(min-width: 768px){
+  .advantages{
+    display: flex;
+    padding-top: 0;
+
+    &--triangle{
+      background-image: none;
+    }
+
+    &__header{
+      widht: 256px;
+      padding: 0;
+    }
+
+    &__caption{
+      margin: 45px 52px 15px 53px;
+
+      font-size: 21px;
+    }
+
+    &__text{
+      margin: 20px 45px 0;
+    }
+
+    &__image{
+      margin-top: 0;
+    }
+
+    &__image img{
+      width: 512px;
+    }
+  }
+}
+
+@media(min-width: 1200px){
+  .advantages{
+
+    &__header{
+      widht: 400px;
+    }
+
+    &__caption{
+      margin: 45px 124px 15px 125px;
+
+      font-size: 21px;
+    }
+
+    &__text{
+      margin: 20px 65px 0;
+    }
+
+    &__image img{
+      width: 800px;
+    }
+  }
+}
+
+

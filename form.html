@@ -38,7 +38,7 @@
         <section class="promo">
           <div class="promo__image promo__image--smaller">
           </div>
-          <h1 class="title">Оставьте свой отзыв</h1>
+          <h1 class="promo__title">Оставьте свой отзыв</h1>
           <p class="promo__text promo__text--mod">
             Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
           </p>
@@ -65,13 +65,15 @@
 
           <fieldset class="form__item form__contacts">
             <h3 class="form__caption">Контактная информация:</h3>
-            <div class="form__wrapper-contacts">
-              <label class="form__name form__name--mod" for="phone-number">Контактный телефон*:</label>
-              <input class="form__field form__field--mod" type="tel" id="phone-number" placeholder="Введите телефон" required>
-            </div>
-            <div class="form__wrapper-contacts">
-              <label class="form__name form__name--mod" for="e-mail">Электронная почта*:</label>
-              <input class="form__field form__field--mod" type="email" id="e-mail" placeholder="Введите e-mail" required>
+            <div class="form__wrapper form__wrapper--mod">
+              <div class="form__wrapper-contacts">
+                <label class="form__name form__name--mod" for="phone-number"><span class="form__hide">Контактный</span> телефон*:</label>
+                <input class="form__field form__field--mod" type="tel" id="phone-number" placeholder="Введите телефон" required>
+              </div>
+              <div class="form__wrapper-contacts">
+                <label class="form__name form__name--mod" for="e-mail">Электронная почта*:</label>
+                <input class="form__field form__field--mod" type="email" id="e-mail" placeholder="Введите e-mail" required>
+              </div>
             </div>
           </fieldset>
 
@@ -94,20 +96,26 @@
           <fieldset class="form__item form__sight">
             <h3 class="form__caption">Посещенные достопримечательности:</h3>
             <div class="form__wrapper-sight">
-              <input class="form__checkbox" type="checkbox" id="bridge" checked>
-              <label class="form__label" for="bridge">Мост Дьявола</label>
-            </div>
-            <div class="form__wrapper-sight">
-              <input class="form__checkbox" type="checkbox" id="park" checked>
-              <label class="form__label" for="park">Слайд-парк</label>
-            </div>
-            <div class="form__wrapper-sight">
-              <input class="form__checkbox" type="checkbox" id="mountain">
-              <label class="form__label" for="mountain">Гора-Колокол</label>
-            </div>
-            <div class="form__wrapper-sight">
-              <input class="form__checkbox" type="checkbox" id="rock" checked>
-              <label class="form__label" for="rock">Красные скалы</label>
+              <div class="form__division-wrapper">
+                <div class="form__wrapper-item">
+                  <input class="form__checkbox" type="checkbox" id="bridge" checked>
+                  <label class="form__label" for="bridge">Мост Дьявола</label>
+                </div>
+                <div class="form__wrapper-item">
+                  <input class="form__checkbox" type="checkbox" id="park" checked>
+                  <label class="form__label" for="park">Слайд-парк</label>
+                </div>
+              </div>
+              <div class="form__division-wrapper">
+                <div class="form__wrapper-item">
+                  <input class="form__checkbox" type="checkbox" id="mountain">
+                  <label class="form__label" for="mountain">Гора-Колокол</label>
+                </div>
+                <div class="form__wrapper-item">
+                  <input class="form__checkbox" type="checkbox" id="rock" checked>
+                  <label class="form__label" for="rock">Красные скалы</label>
+                </div>
+              </div>
             </div>
           </fieldset>
 
