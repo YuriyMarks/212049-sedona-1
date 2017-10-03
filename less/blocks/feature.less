@@ -40,3 +40,44 @@
     margin-bottom: none;
   }
 }
+
+@media(min-width: 768px){
+  .feature{
+    padding: 0;
+
+    &__list{
+      display: flex;
+      padding-top: 45px;
+    }
+
+    &__item{
+      width: 256px;
+
+      border: none;
+    }
+
+    &__caption{
+      width: 130px;
+      margin: 0 auto 20px;
+    }
+
+    &__text{
+      width: 165px;
+      margin: 30px auto 50px;
+    }
+  }
+}
+
+@media(min-width: 1200px){
+  .feature{
+
+    &__item{
+      width: 400px;
+    }
+
+    &__text{
+      width: 295px;
+      margin: 30px auto 65px;
+    }
+  }
+}

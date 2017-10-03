@@ -37,3 +37,45 @@
     border-bottom: 1px solid #cccccc;
   }
 }
+
+@media(min-width: 768px){
+
+  .nav{
+    width: 768px;
+
+    &__list{
+      display: flex;
+    }
+
+    &__item{
+      width: 20%;
+    }
+
+    &__item:nth-child(3){
+      margin-left: 20%;
+    }
+
+    &__link{
+      padding-top: 15px;
+      padding-bottom: 15px;
+
+      font-size: 14px;
+      line-height: 26px;
+      color: #000000;
+
+      background-color: #ffffff;
+      border: none;
+    }
+
+    &__item:nth-child(4) a{
+      border-bottom: none;
+    }
+  }
+}
+
+@media(min-width: 1200px){
+
+  .nav{
+    width: 1200px;
+  }
+}

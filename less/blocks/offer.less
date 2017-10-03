@@ -21,3 +21,46 @@
     margin-bottom: 35px;
   }
 }
+
+@media(min-width: 768px){
+  .offer{
+    padding: 0;
+
+    &__list{
+      display: flex;
+    }
+
+    &__item{
+      box-sizing: border-box;
+      width: 256px;
+      padding: 160px 50px 40px;
+
+      text-align: center;
+    }
+
+    &__item:nth-child(2){
+      order: 3;
+    }
+
+    &__item:nth-child(2){
+      padding: 160px 40px 0;
+    }
+
+    &__caption{
+      font-size: 21px;
+    }
+  }
+}
+
+@media(min-width: 1200px){
+  .offer{
+
+    &__item{
+      box-sizing: border-box;
+      width: 400px;
+      padding: 160px 50px 40px;
+
+      text-align: center;
+    }
+  }
+}
