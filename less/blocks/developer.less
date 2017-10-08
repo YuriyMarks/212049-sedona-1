@@ -1,6 +1,28 @@
 .developer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 129px;
+  margin: 0 auto;
 
   &__text{
     line-height: 26px;
+    margin-right: 14px;
+  }
+
+  &__logo{
+    display: inline-block;
+    width: 30px;
+    height: 35px;
+
+    background-image: url("../img/logo-htmlacademy.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+@media(min-width: 768px){
+  .developer{
+    margin: 0;
+    align-items: center;
   }
 }
