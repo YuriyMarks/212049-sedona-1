@@ -1,8 +1,75 @@
 .button-nav{
-  position: absolute;
-  right: 20px;
-  margin-top: 15px;
-  margin-bottom: 15px;
+
+  &--open{
+    position: absolute;
+    right: 20px;
+    top: 225px;
+    width: 23px;
+    height: 4px;
+    margin-top: 15px;
+
+    background-color: #81b3d2;
+    border: none;
+
+    cursor: pointer;
+  }
+
+  &--open::before{
+    position: absolute;
+    top: 8px;
+    right: 0;
+    content: "";
+    width: 23px;
+    height: 4px;
+
+    background-color: #81b3d2;
+  }
+
+  &--open::after{
+    position: absolute;
+    top: 17px;
+    right: 0;
+    content: "";
+    width: 23px;
+    height: 4px;
+
+    background-color: #81b3d2;
+  }
+
+/*кнопка переключается добавлением модификатора button-nav--close*/
+
+  &--close{
+    width: 23px;
+    height: 4px;
+
+    background-color: #ffffff;
+  }
+
+  &--close::before{
+    position: absolute;
+    top: -214px;
+    right: -1px;
+    content: "";
+    width: 26px;
+    height: 4px;
+
+    background-color: #ffffff;
+
+    transform: rotate(45deg);
+  }
+
+  &--close::after{
+    position: absolute;
+    top: -214px;
+    right: -1px;
+    content: "";
+    width: 26px;
+    height: 4px;
+
+    background-color: #ffffff;
+
+    transform: rotate(-45deg);
+  }
 }
 
 @media(min-width: 768px){

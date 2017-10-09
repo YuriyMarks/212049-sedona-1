@@ -18,7 +18,7 @@
               <a class="nav__link" href="index.html">Главная</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="photo-video.html">Фото и видео</a>
+              <a class="nav__link" href="photo.html">Фото и видео</a>
             </li>
             <li class="nav__item">
               <a class="nav__link" href="form.html">Форма отзыва</a>
@@ -28,7 +28,7 @@
             </li>
           </ul>
         </nav>
-        <button class="button-nav" type="button">Кнопа
+        <button class="button-nav button-nav--open button-nav--close" type="button">
           <span class="visually-hidden">Кнопка меню</span>
         </button>
       </header>
@@ -84,11 +84,11 @@
               <label class="form__label " for="positive">Скорее положительное</label>
             </div>
             <div class="form__wrapper-impression">
-              <input class="form__radio" type="radio" id="negative" checked>
+              <input class="form__radio" type="radio" id="negative" >
               <label class="form__label" for="negative">Скорее отрицательное</label>
             </div>
             <div class="form__wrapper-impression">
-              <input class="form__radio" type="radio" id="no-answer" checked>
+              <input class="form__radio" type="radio" id="no-answer" >
               <label class="form__label" for="no-answer">Затрудняюсь ответить</label>
             </div>
           </fieldset>
@@ -99,21 +99,21 @@
               <div class="form__division-wrapper">
                 <div class="form__wrapper-item">
                   <input class="form__checkbox" type="checkbox" id="bridge" checked>
-                  <label class="form__label" for="bridge">Мост Дьявола</label>
+                  <label class="form__label form__label--mod" for="bridge">Мост Дьявола</label>
                 </div>
                 <div class="form__wrapper-item">
                   <input class="form__checkbox" type="checkbox" id="park" checked>
-                  <label class="form__label" for="park">Слайд-парк</label>
+                  <label class="form__label form__label--mod" for="park">Слайд-парк</label>
                 </div>
               </div>
               <div class="form__division-wrapper">
                 <div class="form__wrapper-item">
                   <input class="form__checkbox" type="checkbox" id="mountain">
-                  <label class="form__label" for="mountain">Гора-Колокол</label>
+                  <label class="form__label form__label--mod" for="mountain">Гора-Колокол</label>
                 </div>
                 <div class="form__wrapper-item">
                   <input class="form__checkbox" type="checkbox" id="rock" checked>
-                  <label class="form__label" for="rock">Красные скалы</label>
+                  <label class="form__label form__label--mod" for="rock">Красные скалы</label>
                 </div>
               </div>
             </div>
@@ -154,18 +154,18 @@
         <div class="footer-page__hashtag">#VISITSEDONA</div>
         <ul class="social">
           <li class="social__item">
-            <a class="social__link" href="https://twitter.com">Твитер</a>
+            <a class="social__link" href="https://twitter.com"><span class="visually-hidden">Твитер</span></a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="https://facebook.com">Фейсбук</a>
+            <a class="social__link" href="https://facebook.com"><span class="visually-hidden">Фейсбук</span></a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="https://youtube.com">Ютьюб</a>
+            <a class="social__link" href="https://youtube.com"><span class="visually-hidden">Ютьюб</span></a>
           </li>
         </ul>
         <div class="developer">
           <span class="developer__text">Разработано</span>
-          <a class="developer__logo" href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY" </a>
+          <a class="developer__logo" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML ACADEMY</span></a>
         </div>
       </footer>
     </div>

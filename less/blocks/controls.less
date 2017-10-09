@@ -1,21 +1,137 @@
+.controls{
+  position: absolute;
+
+  &__value{
+    position: absolute;
+    left: 20px;
+    top: -51px;
+    width: 280px;
+    height: 45px;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  &__line{
+    position: absolute;
+    top: 22px;
+    left: 22px;
+    width: 235px;
+    height: 3px;
+
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  &__button{
+    position: absolute;
+    top: 19px;
+    left: 58px;
+    width: 9px;
+    height: 9px;
+
+    border-radius: 50%;
+    background-color: #ffffff;
+  }
+
+  &__items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    left: 20px;
+    top: -6px;
+    box-sizing: border-box;
+    width: 280px;
+    height: 66px;
+    padding: 0 20px;
+    background-color: #f2f2f2;
+  }
+
+  &__replay{
+    width: 25px;
+    height: 25px;
+
+    background-color: rgba(243, 111, 111, 0.8);
+  }
+
+  &__subtitles{
+    width: 40px;
+    height: 25px;
+    margin-left: auto;
+
+    background-color: rgba(243, 111, 111, 0.8);
+  }
+
+  &__zoom{
+    width: 30px;
+    height: 25px;
+    margin-left: 22px;
+
+    background-color: rgba(243, 111, 111, 0.8);
+  }
+}
+
 @media(min-width: 768px){
   .controls{
-    position: absolute;
+
+    &__items{
     left: 60px;
-    bottom: 6px;
+    top: -99px;
+    box-sizing: border-box;
     width: 648px;
     height: 93px;
+    padding: 0 33px;
 
     background-color: rgba(0, 0, 0, 0.6);
+   }
+
+    &__value{
+      left: 60px;
+      top: -75px;
+      width: 648px;
+      height: 45px;
+      background-color: transparent;
+    }
+
+    &__line{
+      top: 21px;
+      left: 93px;
+      width: 389px;
+      height: 3px;
+
+      background-color: rgba(255, 255, 255, 0.2);
+      z-index: 1;
+    }
+
+    &__button{
+      top: 18px;
+      left: 206px;
+      width: 9px;
+      height: 9px;
+
+      border-radius: 50%;
+      background-color: #ffffff;
+      z-index: 1;
+    }
   }
 }
 
 @media(min-width: 1200px){
   .controls{
     position: absolute;
-    left: 200px;
-    bottom: 6px;
-    width: 800px;
-    height: 93px;
+    left: 140px;
+
+    &__items{
+      left: 59px;
+      width: 800px;
+      padding: 0 37px 0 31px;
+    }
+
+    &__line{
+      left: 92px;
+      width: 540px;
+    }
+
+    &__button{
+      left: 205px;
+    }
   }
 }
