@@ -38,8 +38,16 @@
     color: rgba(255, 255, 255, 0.3);
   }
 
-  &__link[disabled]{
-    background-color: #e5e5e5;
+  &__link--active{
+    background-color: #766357;
+  }
+    
+  &__link--active:hover{
+    background-color: #604e43;
+  }
+    
+  &__link--active:active{
+    background-color: #d6d0cc;
   }
 
   &__item:nth-child(1) a{
