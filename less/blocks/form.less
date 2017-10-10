@@ -155,12 +155,42 @@
     border-radius: 50%;
     border: 17px solid #eeeeee;
   }
+    
+  &__checkbox:checked ~ label::before{
+    background-image: url("../img/icon-tick.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
 
   &__textarea{
     margin: -5px 20px 50px 20px;
 
     border: none;
     background-color: #f2f2f2;
+  }
+    
+  &__field::-webkit-input-placeholder{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+  }
+
+  &__field::-moz-placeholder{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+  }
+
+  &__textarea::-webkit-input-placeholder{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+  }
+
+  &__textarea::-moz-placeholder{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
   }
 }
 
@@ -170,9 +200,9 @@
     flex-wrap: wrap;
 
     &--mod{
-      padding-top: 12px;   
+      padding-top: 12px;
     }
-      
+
     &__caption{
       font-size: 21px;
     }
@@ -279,9 +309,9 @@
     margin-top: -33px;
 
     &--mod{
-      padding-top: 20px;   
+      padding-top: 20px;
     }
-      
+
     &__item{
       margin-left: 124px;
     }
