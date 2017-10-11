@@ -18,7 +18,7 @@
               <a class="nav__link" href="index.html">Главная</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="photo-video.html">Фото и видео</a>
+              <a class="nav__link" href="photo.html">Фото и видео</a>
             </li>
             <li class="nav__item">
               <a class="nav__link" href="form.html">Форма отзыва</a>
@@ -28,7 +28,7 @@
             </li>
           </ul>
         </nav>
-        <button class="button-nav" type="button">Кнопа
+        <button class="button-nav button-nav--open button-nav--close" type="button">
           <span class="visually-hidden">Кнопка меню</span>
         </button>
       </header>
@@ -38,13 +38,13 @@
         <section class="promo">
           <div class="promo__image promo__image--smaller">
           </div>
-          <h1 class="promo__title">Оставьте свой отзыв</h1>
+          <h1 class="promo__title promo__title--mod">Оставьте свой отзыв</h1>
           <p class="promo__text promo__text--mod">
             Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
           </p>
         </section>
 
-        <form class="form" action="http://echo.htmlacademy.ru" method="post">
+        <form class="form form--mod" action="http://echo.htmlacademy.ru" method="post">
           <h2 class="visually-hidden">Форма для отзыва</h2>
 
           <fieldset class="form__item form__introduce">
@@ -80,40 +80,40 @@
           <fieldset class="form__item form__impression">
             <h3 class="form__caption">Ваше общее впечатление:</h3>
             <div class="form__wrapper-impression">
-              <input class="form__radio" type="radio" id="positive" checked>
+              <input class="form__radio" type="radio" id="positive" name="impression" checked>
               <label class="form__label " for="positive">Скорее положительное</label>
             </div>
             <div class="form__wrapper-impression">
-              <input class="form__radio" type="radio" id="negative" checked>
+              <input class="form__radio" type="radio" id="negative" name="impression">
               <label class="form__label" for="negative">Скорее отрицательное</label>
             </div>
             <div class="form__wrapper-impression">
-              <input class="form__radio" type="radio" id="no-answer" checked>
+              <input class="form__radio" type="radio" id="no-answer" name="impression">
               <label class="form__label" for="no-answer">Затрудняюсь ответить</label>
             </div>
           </fieldset>
 
           <fieldset class="form__item form__sight">
-            <h3 class="form__caption">Посещенные достопримечательности:</h3>
+            <h3 class="form__caption form__caption--mod">Посещенные достопримечательности:</h3>
             <div class="form__wrapper-sight">
               <div class="form__division-wrapper">
                 <div class="form__wrapper-item">
                   <input class="form__checkbox" type="checkbox" id="bridge" checked>
-                  <label class="form__label" for="bridge">Мост Дьявола</label>
+                  <label class="form__label form__label--mod" for="bridge">Мост Дьявола</label>
                 </div>
                 <div class="form__wrapper-item">
                   <input class="form__checkbox" type="checkbox" id="park" checked>
-                  <label class="form__label" for="park">Слайд-парк</label>
+                  <label class="form__label form__label--mod" for="park">Слайд-парк</label>
                 </div>
               </div>
               <div class="form__division-wrapper">
                 <div class="form__wrapper-item">
                   <input class="form__checkbox" type="checkbox" id="mountain">
-                  <label class="form__label" for="mountain">Гора-Колокол</label>
+                  <label class="form__label form__label--mod" for="mountain">Гора-Колокол</label>
                 </div>
                 <div class="form__wrapper-item">
                   <input class="form__checkbox" type="checkbox" id="rock" checked>
-                  <label class="form__label" for="rock">Красные скалы</label>
+                  <label class="form__label form__label--mod" for="rock">Красные скалы</label>
                 </div>
               </div>
             </div>
@@ -124,7 +124,7 @@
             <textarea class="form__textarea" rows="10" cols="37">Опишите подробно все свои восторги</textarea>
           </fieldset>
 
-          <button class="button" type="submit">
+          <button class="button button--mod" type="submit">
             Отправить отзыв
           </button>
         </form>
@@ -154,18 +154,18 @@
         <div class="footer-page__hashtag">#VISITSEDONA</div>
         <ul class="social">
           <li class="social__item">
-            <a class="social__link" href="https://twitter.com">Твитер</a>
+            <a class="social__link" href="https://twitter.com"><span class="visually-hidden">Твитер</span></a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="https://facebook.com">Фейсбук</a>
+            <a class="social__link" href="https://facebook.com"><span class="visually-hidden">Фейсбук</span></a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="https://youtube.com">Ютьюб</a>
+            <a class="social__link" href="https://youtube.com"><span class="visually-hidden">Ютьюб</span></a>
           </li>
         </ul>
         <div class="developer">
           <span class="developer__text">Разработано</span>
-          <a class="developer__logo" href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY" </a>
+          <a class="developer__logo" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML ACADEMY</span></a>
         </div>
       </footer>
     </div>

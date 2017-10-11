@@ -1,12 +1,12 @@
 .search{
-  padding: 30px 20px 50px 20px;
+  padding: 6px 20px 49px 20px;
 
   text-align: center;
 
   background-color: #ffffff;
 
   &__appeal{
-    margin-bottom: 30px;
+    margin-bottom: 19px;
 
     font-size: 21px;
     font-weight: 700;
@@ -14,12 +14,14 @@
   }
 
   &__text{
-    margin-bottom: 40px;
+    margin-bottom: 35px;
+
+    line-height: 24px;
   }
 
   &__button{
     display: block;
-    padding: 17px 45px;
+    padding: 16px 45px;
 
     font-size: 21px;
     font-weight: 700;
@@ -30,28 +32,52 @@
 
     text-decoration: none;
   }
+
+  &__button:hover{
+    background-color: #669ec0;
+  }
+
+  &__button:active{
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #5496bd;
+  }
+    
+  &__button[disabled]{
+    background-color: #e5e5e5;  
+  }
 }
 
 @media(min-width: 768px){
   .search{
+    padding-bottom: 58px;
 
     &__appeal{
       width: 300px;
-      margin: 0 auto 35px;
+      margin: 49px auto 31px;
 
       font-size: 30px;
     }
 
     &__text{
       width: 400px;
-      margin: 0 auto 45px;
+      margin: 0 auto 42px;
 
       line-height: 24px;
     }
 
     &__button{
-      width: 460px;
+      width: 368px;
       margin: 0 auto;
+    }
+  }
+}
+
+@media(min-width: 1200px){
+  .search{
+    padding-bottom: 66px;
+
+    &__text{
+      margin-bottom: 47px;
     }
   }
 }

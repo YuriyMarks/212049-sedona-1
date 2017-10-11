@@ -18,7 +18,7 @@
               <a class="nav__link" href="index.html">Главная</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="photo-video.html">Фото и видео</a>
+              <a class="nav__link" href="photo.html">Фото и видео</a>
             </li>
             <li class="nav__item">
               <a class="nav__link" href="form.html">Форма отзыва</a>
@@ -28,7 +28,8 @@
             </li>
           </ul>
         </nav>
-        <button class="button-nav" type="button">Кнопа
+        <button class="button-nav button-nav--open button-nav--close" type="button">
+<!--кнопка переключается добавлением модификатора  button-nav--сlose-->
           <span class="visually-hidden">Кнопка меню</span>
         </button>
       </header>
@@ -38,7 +39,7 @@
         <section class="promo">
           <div class="promo__image">
           </div>
-          <h1 class="title title--mod">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+          <h1 class="promo__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
           <p class="promo__text">
             Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!
           </p>
@@ -82,12 +83,12 @@
           </ul>
         </section>
 
-        <section class="advantages">
+        <section class="advantages advantages--order">
           <h2 class="visually-hidden">Достоинства города Седона</h2>
           <header class="advantages__header">
-            <p class="advantages__caption">Там есть мост дьявола</p>
+            <p class="advantages__caption advantages__caption--mod">Там есть мост дьявола</p>
             <span class="advantages__order">— №2 —</span>
-            <p class="advantages__text">
+            <p class="advantages__text advantages__text">
               Да, по нему можно пройти! Если вы осмелитесь, конечно
             </p>
           </header>
@@ -107,16 +108,16 @@
               </p>
             </li>
             <li class=feature__item>
-              <p class="feature__caption">Красивая дорога</p>
+              <p class="feature__caption feature__caption--mod">Красивая дорога</p>
               <span class="feature__order">— №4 —</span>
-              <p class="feature__text">
+              <p class="feature__text feature__text--mod">
                 Ехать в Седону из Лас-Вегаса совсем не скучно!
               </p>
             </li>
             <li class=feature__item>
-              <p class="feature__caption">Мало туристов</p>
+              <p class="feature__caption feature__caption--mod">Мало туристов</p>
               <span class="feature__order">— №5 —</span>
-              <p class="feature__text">
+              <p class="feature__text feature__text--mod">
                 Большинство едет в гранд каньон и толпится там
               </p>
             </li>
@@ -145,18 +146,18 @@
         <div class="footer-page__hashtag">#VISITSEDONA</div>
         <ul class="social">
           <li class="social__item">
-            <a class="social__link" href="https://twitter.com">Твитер</a>
+            <a class="social__link" href="https://twitter.com"><span class="visually-hidden">Твитер</span></a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="https://facebook.com">Фейсбук</a>
+            <a class="social__link" href="https://facebook.com"><span class="visually-hidden">Фейсбук</span></a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="https://youtube.com">Ютьюб</a>
+            <a class="social__link" href="https://youtube.com"><span class="visually-hidden">Ютьюб</span></a>
           </li>
         </ul>
         <div class="developer">
           <span class="developer__text">Разработано</span>
-          <a class="developer__logo" href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY" </a>
+          <a class="developer__logo" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML ACADEMY"</span></a>
         </div>
       </footer>
     </div>
