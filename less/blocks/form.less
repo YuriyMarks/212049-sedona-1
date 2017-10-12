@@ -49,6 +49,20 @@
     margin: -15px 20px 28px 20px;
   }
 
+  &__wrapper-contacts label{
+    position: relative;
+  }
+
+  &__wrapper-contacts label::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 58px;
+    height: 58px;
+
+    background-color: #e6e6e6;
+  }
+
   &__wrapper-impression{
     position: relative;
     margin: 38px 20px 42px 20px;
@@ -77,7 +91,7 @@
   }
 
   &__field:hover{
-    background-color: #e5e5e5;   
+    background-color: #e5e5e5;
   }
 
   &__field:focus{
@@ -147,25 +161,25 @@
     background-color: #f2f2f2;
     border-radius: 50%;
   }
-    
+
   &__label:hover::before{
-    background-color: #e5e5e5;  
+    background-color: #e5e5e5;
   }
-    
+
   &__label:active::before{
-    background-color: #d5d5d5;  
+    background-color: #d5d5d5;
   }
 
   &__label--mod::before{
     border-radius: 10%;
   }
-    
+
   &__radio:focus + label::before{
-    outline: 4px solid #e5e5e5;    
+    outline: 4px solid #e5e5e5;
   }
-    
+
   &__checkbox:focus + label::before{
-    outline: 4px solid #e5e5e5;    
+    outline: 4px solid #e5e5e5;
   }
 
   &__radio[name="impression"]:checked ~ label::before{
@@ -180,7 +194,7 @@
     border-radius: 50%;
     border: 17px solid #f2f2f2;
   }
-    
+
   &__radio[name="impression"]:checked ~ label:hover::before{
     border: 17px solid #e5e5e5;
   }
@@ -189,7 +203,7 @@
     background-color: #a4a4a4;
     border: 17px solid #d5d5d5;
   }
- 
+
   &__checkbox:checked ~ label::before{
     background-image: url("../img/icon-tick.svg");
     background-repeat: no-repeat;
@@ -202,7 +216,7 @@
     border: none;
     background-color: #f2f2f2;
   }
-    
+
   &__field::-webkit-input-placeholder{
     font-size: 18px;
     font-weight: 700;
