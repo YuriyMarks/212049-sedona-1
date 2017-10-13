@@ -10,6 +10,48 @@
     list-style: none;
   }
 
+  &__item{
+    position: relative;
+  }
+
+  &__item::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 55px;
+    height: 55px;
+  }
+
+  &__item:nth-child(1)::before{
+    top: -14px;
+    left: -62px;
+
+    background-image: url("../img/icon-house.svg");
+    background-repeat: no-repeat;
+    background-size: 37px 37px;
+    background-position: 14px 4px;
+  }
+
+  &__item:nth-child(2)::before{
+    top: -10px;
+    left: -48px;
+
+    background-image: url("../img/icon-gift.svg");
+    background-repeat: no-repeat;
+    background-size: 37px 37px;
+    background-position: 0 -1px;
+  }
+
+  &__item:nth-child(3)::before{
+    top: -23px;
+    left: -60px;
+
+    background-image: url("../img/icon-burger.svg");
+    background-repeat: no-repeat;
+    background-size: 37px 37px;
+    background-position: 9px 17px;
+  }
+
   &__caption{
     margin-bottom: 14px;
     font-size: 18px;
@@ -46,6 +88,44 @@
       padding: 138px 40px 0;
     }
 
+    &__item::before{
+      content: "";
+      display: block;
+      position: absolute;
+      width: 80px;
+      height: 80px;
+    }
+
+    &__item:nth-child(1)::before{
+      top: 55px;
+      left: 86px;
+
+      background-image: url("../img/icon-house.svg");
+      background-repeat: no-repeat;
+      background-size: 75px 75px;
+      background-position: 4px 3px;
+    }
+
+    &__item:nth-child(2)::before{
+      top: 55px;
+      left: 88px;
+
+      background-image: url("../img/icon-gift.svg");
+      background-repeat: no-repeat;
+      background-size: 75px 75px;
+      background-position: 1px 2px;
+    }
+
+    &__item:nth-child(3)::before{
+      top: 55px;
+      left: 86px;
+
+      background-image: url("../img/icon-burger.svg");
+      background-repeat: no-repeat;
+      background-size: 75px 75px;
+      background-position: 4px 5px;
+    }
+
     &__caption{
       margin-bottom: 20px;
 
@@ -63,6 +143,18 @@
       padding: 138px 50px 54px;
 
       text-align: center;
+    }
+
+    &__item:nth-child(1)::before{
+      left: 157px;
+    }
+
+    &__item:nth-child(2)::before{
+      left: 160px;
+    }
+
+    &__item:nth-child(3)::before{
+      left: 158px;
     }
 
     &__caption{

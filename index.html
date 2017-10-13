@@ -10,7 +10,11 @@
       <header class="header-page">
         <a class="header-page__logo">
           <span class="visually-hidden">Логотип</span>
-          <img src="img/logo-sedona-mobile.svg" width="100" height="85" alt="Город Седона">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+            <img src="img/logo-sedona-mobile.svg" width="100" height="85" alt="Город Седона">
+          </picture>
         </a>
         <nav class="nav">
           <ul class="nav__list">
@@ -54,7 +58,14 @@
             </p>
           </header>
           <div class="advantages__image">
-            <img src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="Седона - настоящий городок">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg,
+                                                          img/main-city-desktop@2x.jpg">
+              <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg,
+                                                         img/main-city-tablet@2x.jpg">
+              <img src="img/main-city-mobile@1x.jpg"
+                   srcset="img/main-city-mobile@2x.jpg" alt="Седона - настоящий городок">
+            </picture>
           </div>
         </section>
 
@@ -92,7 +103,14 @@
             </p>
           </header>
           <div class="advantages__image">
-            <img  src="img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="В Седоне  есть мост дьявола">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg,
+                                                          img/main-bridge-desktop@2x.jpg">
+              <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg,
+                                                         img/main-bridge-tablet@2x.jpg">
+              <img  src="img/main-bridge-mobile@1x.jpg"
+                    srcset="img/main-bridge-mobile@2x.jpg" alt="В Седоне  есть мост дьявола">
+            </picture>
           </div>
         </section>
 
@@ -134,8 +152,14 @@
 
         <section class="map">
           <h2 class=visually-hidden>Интерактивная карта</h2>
-          <div class="map__search">
-          </div>
+          <picture class="map__picture">
+            <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg,
+                                                        img/bg-map-desktop@2x.jpg">
+            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg,
+                                                        img/bg-map-tablet@2x.jpg">
+            <img src="img/bg-map-mobile@1x.jpg"
+                 srcset="img/bg-map-mobile@2x.jpg" alt="Мост дьявола">
+          </picture>
         </section>
       </main>
 

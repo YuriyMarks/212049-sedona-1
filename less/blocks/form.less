@@ -56,10 +56,24 @@
     content: "";
     display: block;
     position: absolute;
+    top: 30px;
+    left: 201px;
     width: 58px;
     height: 58px;
 
     background-color: #e6e6e6;
+  }
+
+  &__wrapper-contacts:nth-child(1) label::after{
+    background-image: url("../img/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-position: 21px 20px;
+  }
+
+  &__wrapper-contacts:nth-child(2) label::after{
+    background-image: url("../img/icon-mail.svg");
+    background-repeat: no-repeat;
+    background-position: 21px 21px;
   }
 
   &__wrapper-impression{
@@ -84,7 +98,7 @@
     box-sizing: border-box;
     width: 100%;
     padding: 20px 22px;
-      
+
     font-family: "PT Sans", "Arial", sans-serif;
 
     border: none;
@@ -216,7 +230,7 @@
     height: 145px;
     padding: 16px 0 0 21px;
     margin: -5px 20px 44px 20px;
-    
+
     font-size: 18px;
     font-weight: 700;
     line-height: 26px;
@@ -226,9 +240,13 @@
     background-color: #f2f2f2;
   }
 
+  &__obligitory{
+    display: none;
+  }
+
   &__field::-webkit-input-placeholder{
     padding-left: -5px;
-      
+
     font-size: 18px;
     font-weight: 700;
     line-height: 26px;
@@ -236,7 +254,7 @@
 
   &__field::-moz-placeholder{
     padding-left: -5px;
-      
+
     font-size: 18px;
     font-weight: 700;
     line-height: 26px;
@@ -282,6 +300,10 @@
 
     &__wrapper-contacts:nth-child(2) {
       margin: 20px 0 30px 0;
+    }
+
+    &__wrapper-contacts label::after{
+      left: 570px;
     }
 
     &__wrapper-impression{
@@ -335,6 +357,17 @@
       margin: 22px auto -15px;
     }
 
+    &__emotions{
+      position: relative;
+    }
+
+    &__obligitory{
+      display: block;
+      position: absolute;
+      top: 343px;
+      left: 485px;
+    }
+
     &__item:nth-of-type(4) h3{
       width: 290px;
       margin: 0 auto;
@@ -383,13 +416,23 @@
       margin-top: -33px;
       margin-left: 83px;
     }
-      
+
     &__emotions{
       margin-left: 120px;
     }
 
     &__wrapper-contacts:nth-child(2){
       margin-top: -5px;
+    }
+
+    &__wrapper-contacts label::after{
+      top: -19px;
+      left: 343px;
+    }
+
+    &__wrapper-contacts:nth-child(2) label::after{
+      top: -19px;
+      left: 420px;
     }
 
     &__wrapper--mod{
@@ -459,6 +502,12 @@
       height: 144px;
       margin-top: 35px;
       margin-bottom: 51px;
+    }
+
+    &__obligitory{
+      position: absolute;
+      top: 341px;
+      left: 797px;
     }
 
     &__hide{

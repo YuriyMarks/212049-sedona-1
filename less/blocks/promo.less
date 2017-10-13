@@ -16,16 +16,36 @@
     background-position: 50% 50%, 50% 100%, -225px 0;
   }
 
+  @media(min-resolution: 1.5dppx){
+    .promo{
+
+     &__image{
+       background-image: url("../img/bg-back-mobile@2x.jpg");
+     }
+   }
+ }
+
   &__image--smaller{
-    height: 159px;
+    height: 165px;
+    margin-bottom: 33px;
 
     background-image:
       url("../img/text-sedona.svg"),
       url("../img/bg-intro-triangle-mobile.svg"),
       url("../img/bg-back-mobile@1x.jpg");
     background-repeat: no-repeat, no-repeat, no-repeat;
-    background-position: 50% 50px, 50% 132px, -225px -225px;
+    background-position: 43px 50px, 50% 63px, -225px -231px;
+    background-size: 228px 43px, 100% 100%, 768px 389px;
   }
+
+  @media(min-resolution: 1.5dppx){
+    .promo{
+
+     &__image--smaller{
+       background-image: url("../img/bg-back-mobile@2x.jpg");
+     }
+   }
+ }
 
   &__title{
     width: 260px;
@@ -46,7 +66,7 @@
   }
 
   &__text--mod{
-    margin: 26px 13px 22px 13px;
+    margin: 28px 13px 22px 13px;
 
     line-height: 24px;
   }
@@ -68,22 +88,42 @@
 
       background-image:
         url("../img/text-sedona-index.svg"),
-        url("../img/bg-back-mobile@1x.jpg");
-      background-repeat: no-repeat, no-repeat;
-      background-position: 152px 75px, 50% 50%;
-      background-size: 465px 355px, 135% 521px;
+        url("../img/bg-intro-triangle-tablet.svg"),
+        url("../img/bg-back-tablet@1x.jpg");
+      background-repeat: no-repeat, no-repeat, no-repeat;
+      background-position: 152px 75px, 0 232px, 50% 50%;
+      background-size: 465px 355px, 100% 100%, 100% 100%;
     }
+
+    @media(min-resolution: 1.5dppx){
+      .promo{
+
+      &__image{
+        background-image: url("../img/bg-back-tablet@2x.jpg");
+      }
+    }
+  }
 
     &__image--smaller{
       height: 290px;
 
       background-image:
         url("../img/text-sedona.svg"),
-        url("../img/bg-back-mobile@1x.jpg");
+        url("../img/bg-intro-triangle-tablet.svg"),
+        url("../img/bg-back-tablet@1x.jpg");
       background-repeat: no-repeat, no-repeat;
-      background-position: 50% 94px, 50% 50%;
-      background-size: 475px 80px, 100% 290px;
+      background-position: 50% 94px, 0 117px, 0 -228px;
+      background-size: 475px 80px, 100% 100%, 100% 518px;
     }
+
+    @media(min-resolution: 1.5dppx){
+     .promo{
+
+      &__image--smaller{
+        background-image: url("../img/bg-back-tablet@2x.jpg");
+      }
+    }
+  }
 
     &__title{
       width: 455px;
@@ -126,22 +166,42 @@
 
       background-image:
         url("../img/text-sedona-index.svg"),
-        url("../img/bg-back-mobile@1x.jpg");
+        url("../img/bg-intro-triangle-desktop.svg"),
+        url("../img/bg-back-desktop@1x.jpg");
       background-repeat: no-repeat, no-repeat;
-      background-position: 155px 78px, 50% 50%;
-      background-size: 888px 353px, 135% 521px;
+      background-position: 155px 78px, 0 232px, 50% 50%;
+      background-size: 888px 353px, 100% 100%, 100% 100%;
     }
+
+   @media(min-resolution: 1.5dppx){
+     .promo{
+
+     &__image{
+       background-image: url("../img/bg-back-desktop@2x.jpg");
+     }
+   }
+ }
 
     &__image--smaller{
       height: 302px;
 
       background-image:
         url("../img/text-sedona.svg"),
-        url("../img/bg-back-mobile@1x.jpg");
+        url("../img/bg-intro-triangle-desktop.svg"),
+        url("../img/bg-back-desktop@1x.jpg");
       background-repeat: no-repeat, no-repeat;
-      background-position: 368px 94px, 50% 50%;
-      background-size: 460px 94px, 100% 302px;
+      background-position: 368px 94px, 0 122px, 0 -217px;
+      background-size: 460px 94px, 100% 100%, 100% 518px;
     }
+
+   @media(min-resolution: 1.5dppx){
+     .promo{
+
+     &__image--smaller{
+       background-image: url("../img/bg-back-desktop@2x.jpg");
+     }
+   }
+ }
 
     &__title {
       margin: 47px auto 29px;

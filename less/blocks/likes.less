@@ -1,10 +1,25 @@
 .likes{
-  width: 87px;
-  margin-top: 8px;
+  display: flex;
+  width: 84px;
+  margin-top: 7px;
+
+  &__like{
+    width: 25px;
+    height: 25px;
+    margin-right: 12px;
+
+    background-image: url("../img/icon-like.svg");
+    background-repeat: no-repeat;
+    background-position: 0 -1px;
+  }
 }
 
 @media(min-width: 768px){
   .likes{
-  margin-top: 0;
-}
+    margin-top: 0;
+
+    &__like{
+      margin-right: 7px;
+    }
+  }
 }
