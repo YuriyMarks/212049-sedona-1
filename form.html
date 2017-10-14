@@ -10,7 +10,11 @@
       <header class="header-page">
         <a class="header-page__logo" href="index.html">
           <span class="visually-hidden">Логотип</span>
-          <img src="img/logo-sedona-mobile.svg" width="100" height="85" alt="Город Седона">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+            <img src="img/logo-sedona-mobile.svg" width="100" height="85" alt="Город Седона">
+          </picture>
         </a>
         <nav class="nav">
           <ul class="nav__list">
@@ -121,7 +125,8 @@
 
           <fieldset class="form__item form__emotions">
             <h3 class="form__caption">Опишите свои эмоции:</h3>
-            <textarea class="form__textarea" rows="10" cols="37">Опишите подробно все свои восторги</textarea>
+            <textarea class="form__textarea" rows="5" cols="25">Опишите подробно все свои восторги</textarea>
+            <div class=form__obligitory>* — обязательные поля</div>
           </fieldset>
 
           <button class="button button--mod" type="submit">
