@@ -29,6 +29,8 @@
 
     border-radius: 50%;
     background-color: #ffffff;
+
+    cursor: pointer;
   }
 
   &__items{
@@ -45,33 +47,47 @@
     background-color: #f2f2f2;
   }
 
-  &__replay{
-    width: 25px;
-    height: 25px;
+  &__item{
+    position: relative;
+  }
 
-    background-image: url("../img/icon-video-replay.svg");
-    background-repeat: no-repeat;
-    background-position: 5px 1px;
+  &__item svg{
+    position: absolute;
+
+    fill: #5c6870;
+
+    cursor: pointer;
+  }
+
+  &__item:hover svg{
+    fill: #333333;
+  }
+
+  &__item:active svg{
+    fill: #c1c1c1;
+  }
+
+  &__replay{
+    top: -12px;
+    left: 6px;
+    width: 22px;
+    height: 22px;
   }
 
   &__subtitles{
-    width: 40px;
-    height: 25px;
+    top: -10px;
+    left: 25px;
+    width: 41px;
+    height: 20px;
     margin-left: auto;
-
-    background-image: url("../img/icon-video-subtitles.svg");
-    background-repeat: no-repeat;
-    background-position: 6px 2px;
   }
 
   &__zoom{
-    width: 30px;
-    height: 25px;
+    top: -11px;
+    left: -45px;
+    width: 22px;
+    height: 22px;
     margin-left: 22px;
-
-    background-image: url("../img/icon-video-fullscreen.svg");
-    background-repeat: no-repeat;
-    background-position: 7px 2px;
   }
 }
 
@@ -118,16 +134,31 @@
       z-index: 1;
     }
 
+    &__item svg{
+      fill: #ffffff;
+    }
+
+    &__item:hover svg{
+    fill: #ffffff;
+  }
+
+  &__item:active svg{
+    fill: #ffffff;
+  }
+
     &__replay{
-      background-color: aliceblue;
+      top: -13px;
+      left: 2px;
     }
 
     &__subtitles{
-      background-color: aliceblue;
+      top: -11px;
+      left: 191px;
     }
 
     &__zoom{
-      background-color: aliceblue;
+      top: -12px;
+      left: -50px;
     }
   }
 }
@@ -153,15 +184,17 @@
     }
 
     &__replay{
-      background-color: aliceblue;
+      left: 4px;
     }
 
     &__subtitles{
-      background-color: aliceblue;
+      top: -11px;
+      left: 268px;
     }
 
     &__zoom{
-      background-color: aliceblue;
+      top: -12px;
+      left: -47px;
     }
   }
 }
