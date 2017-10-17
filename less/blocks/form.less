@@ -41,6 +41,7 @@
   }
 
   &__wrapper-contacts{
+    position: relative;
     margin: 23px 20px 30px 20px;
   }
 
@@ -64,16 +65,10 @@
     background-color: #e6e6e6;
   }
 
-  &__wrapper-contacts:nth-child(1) label::after{
-    background-image: url("../img/icon-phone.svg");
-    background-repeat: no-repeat;
-    background-position: 21px 20px;
-  }
-
-  &__wrapper-contacts:nth-child(2) label::after{
-    background-image: url("../img/icon-mail.svg");
-    background-repeat: no-repeat;
-    background-position: 21px 21px;
+  &__wrapper-contacts svg{
+    position: absolute;
+    top: 50px;
+    left: 243px;
   }
 
   &__wrapper-impression{
@@ -103,6 +98,8 @@
 
     border: none;
     background-color: #f2f2f2;
+
+    cursor: pointer;
   }
 
   &__field:hover{
@@ -120,6 +117,8 @@
 
   &__name{
     margin-right: 13px;
+
+    cursor: pointer;
   }
 
   &__name--mod{
@@ -136,6 +135,8 @@
     line-height: 26px;
 
     text-transform: none;
+
+    cursor: pointer;
   }
 
   &__radio{
@@ -149,6 +150,8 @@
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+
+    cursor: pointer;
   }
 
   &__checkbox{
@@ -162,6 +165,8 @@
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+
+    cursor: pointer;
   }
 
   &__label::before{
@@ -238,9 +243,11 @@
 
     border: none;
     background-color: #f2f2f2;
+
+    cursor: pointer;
   }
 
-  &__obligitory{
+  &__obligatory{
     display: none;
   }
 
@@ -306,6 +313,10 @@
       left: 570px;
     }
 
+    &__wrapper-contacts svg{
+      left: 611px;
+    }
+
     &__wrapper-impression{
       position: relative;
       margin: 25px 0 52px 0;
@@ -361,11 +372,11 @@
       position: relative;
     }
 
-    &__obligitory{
+    &__obligatory{
       display: block;
       position: absolute;
       top: 343px;
-      left: 485px;
+      left: 483px;
     }
 
     &__item:nth-of-type(4) h3{
@@ -430,9 +441,19 @@
       left: 343px;
     }
 
-    &__wrapper-contacts:nth-child(2) label::after{
+    &__wrapper-contacts:nth-child(2)       label::after{
       top: -19px;
       left: 420px;
+    }
+
+    &__wrapper-contacts:nth-child(1) svg{
+      top: 19px;
+      left: 364px;
+    }
+
+    &__wrapper-contacts:nth-child(2) svg{
+      top: 20px;
+      left: 443px;
     }
 
     &__wrapper--mod{
@@ -504,10 +525,10 @@
       margin-bottom: 51px;
     }
 
-    &__obligitory{
+    &__obligatory{
       position: absolute;
       top: 341px;
-      left: 797px;
+      left: 795px;
     }
 
     &__hide{
