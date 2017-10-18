@@ -38,8 +38,10 @@ module.exports = function(grunt) {
       options: {
         includeTitleElement: false
       },
-      files: {
-        "build/img/sprite.svg": ["img/icon-*.svg"]
+      sprite: {
+        files: {
+          "build/img/sprite.svg": ["img/icon-*.svg"]
+        }
       }
     },
 
@@ -105,12 +107,12 @@ module.exports = function(grunt) {
       server: {
         bsFiles: {
           src: [
-            "*.html",
-            "css/*.css"
+            "build/*.html",
+            "build/css/*.css"
           ]
         },
         options: {
-          server: ".",
+          server: "build",
           watchTask: true,
           notify: false,
           open: true,
@@ -121,11 +123,15 @@ module.exports = function(grunt) {
     },
 
     watch: {
+      html: {
+        files: ["*.html"],
+        task: ["posthtml"]
+      },
       style: {
         files: ["less/**/*.less"],
-        tasks: ["less", "postcss"]
+        tasks: ["less", "postcss", "csso"]
       }
-    },
+    }
   });
 
   grunt.registerTask("serve", ["browserSync", "watch"]);
