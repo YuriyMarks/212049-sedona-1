@@ -1,57 +1,68 @@
 .button-nav{
-  cursor: pointer;
+  display: none;
 
-  &--open{
+  &--close{
+    display: block;
     position: absolute;
+    top: 26px;
     right: 20px;
-    top: 225px;
     width: 23px;
     height: 4px;
-    margin-top: 15px;
+
+    border: none;
+    outline: none;
+    background-color: #81b3d2;
+
+    cursor: pointer;
+  }
+
+  &--close::before{
+    position: absolute;
+    top: -9px;
+    right: 0px;
+    content: "";
+    width: 23px;
+    height: 4px;
 
     background-color: #81b3d2;
+
+    cursor: pointer;
+  }
+
+  &--close::after{
+    position: absolute;
+    top: 8px;
+    right: 0px;
+    content: "";
+    width: 23px;
+    height: 4px;
+
+    background-color: #81b3d2;
+
+    cursor: pointer;
+  }
+
+  &--open{
+    display: table;
+    position: absolute;
+    top: 13px;
+    left: 274px;
+    width: 30px;
+    height: 30px;
+
     border: none;
+    outline: none;
+    background-color: transparent;
 
     cursor: pointer;
   }
 
   &--open::before{
     position: absolute;
-    top: 8px;
-    right: 0;
+    top: 13px;
+    right: 2px;
     content: "";
-    width: 23px;
-    height: 4px;
-
-    background-color: #81b3d2;
-  }
-
-  &--open::after{
-    position: absolute;
-    top: 17px;
-    right: 0;
-    content: "";
-    width: 23px;
-    height: 4px;
-
-    background-color: #81b3d2;
-  }
-
-/*кнопка переключается добавлением модификатора button-nav--close*/
-
-  &--close{
-    width: 23px;
-    height: 4px;
-
-    background-color: #ffffff;
-  }
-
-  &--close::before{
-    position: absolute;
-    top: -214px;
-    right: -1px;
-    content: "";
-    width: 26px;
+    width: 27px;
     height: 4px;
 
     background-color: #ffffff;
@@ -59,12 +70,12 @@
     transform: rotate(45deg);
   }
 
-  &--close::after{
+  &--open::after{
     position: absolute;
-    top: -214px;
-    right: -1px;
+    top: 13px;
+    right: 2px;
     content: "";
-    width: 26px;
+    width: 27px;
     height: 4px;
 
     background-color: #ffffff;

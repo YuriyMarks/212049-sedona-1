@@ -1,5 +1,9 @@
 .nav{
 
+  &--close{
+    display: none;
+  }
+
   &__list{
     margin: 0;
     padding: 0;
@@ -41,11 +45,11 @@
   &__link--active{
     background-color: #766357;
   }
-    
+
   &__link--active:hover{
     background-color: #604e43;
   }
-    
+
   &__link--active:active{
     background-color: #d6d0cc;
   }
@@ -62,6 +66,7 @@
 @media(min-width: 768px){
 
   .nav{
+    display: block;
     width: 768px;
 
     &__list{
