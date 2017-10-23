@@ -19,11 +19,17 @@
   @media(min-resolution: 1.5dppx){
     .promo{
 
-     &__image{
-       background-image: url("../img/bg-back-mobile@2x.jpg");
-     }
-   }
- }
+      &__image{
+        background-image: 
+          url(../img/text-sedona-index.svg), 
+          url(../img/bg-intro-triangle-mobile.svg), 
+          url(../img/bg-back-mobile@2x.jpg);
+        background-repeat: no-repeat, no-repeat, no-repeat;
+        background-position: 48% 51%, 50% 100%, 50% 100%;
+        background-size: 88% 55%, 100% 26px, cover;
+      }
+    }
+  }
 
   &__image--smaller{
     height: 165px;
@@ -41,11 +47,17 @@
   @media(min-resolution: 1.5dppx){
     .promo{
 
-     &__image--smaller{
-       background-image: url("../img/bg-back-mobile@2x.jpg");
-     }
-   }
- }
+      &__image--smaller{
+        background-image:
+          url("../img/text-sedona.svg"),
+          url("../img/bg-intro-triangle-mobile.svg"),
+          url("../img/bg-back-mobile@2x.jpg");
+        background-repeat: no-repeat, no-repeat, no-repeat;
+        background-position: 43px 50px, 50% 63px, -225px -231px;
+        background-size: 228px 43px, 100% 100%, 768px 389px;
+      }
+    }
+  }
 
   &__title{
     width: 260px;
@@ -66,7 +78,7 @@
   }
 
   &__text--mod{
-    margin: 28px 13px 22px 13px;
+    margin: 28px 12px 22px 11px;
 
     line-height: 24px;
   }
@@ -98,11 +110,17 @@
     @media(min-resolution: 1.5dppx){
       .promo{
 
-      &__image{
-        background-image: url("../img/bg-back-tablet@2x.jpg");
+        &__image{
+          background-image:
+            url("../img/text-sedona-index.svg"),
+            url("../img/bg-intro-triangle-tablet.svg"),
+            url("../img/bg-back-tablet@2x.jpg");
+          background-repeat: no-repeat, no-repeat, no-repeat;
+          background-position: 152px 75px, 0 233px, 50% 50%;
+          background-size: 465px 355px, 100% 100%, 100% 100%;
+        }
       }
     }
-  }
 
     &__image--smaller{
       height: 290px;
@@ -119,11 +137,17 @@
     @media(min-resolution: 1.5dppx){
      .promo{
 
-      &__image--smaller{
-        background-image: url("../img/bg-back-tablet@2x.jpg");
+        &__image--smaller{
+          background-image:
+            url("../img/text-sedona.svg"),
+            url("../img/bg-intro-triangle-tablet.svg"),
+            url("../img/bg-back-tablet@2x.jpg");
+          background-repeat: no-repeat, no-repeat;
+          background-position: 50% 94px, 0 117px, 0 -228px;
+          background-size: 475px 80px, 100% 100%, 100% 518px;
+        }
       }
     }
-  }
 
     &__title{
       width: 455px;

@@ -30,6 +30,10 @@
   &__link:active svg{
     opacity: 0.3;
   }
+  
+  &__link:focus{
+    outline: 1px solid blue;
+  }
 
   &__icon{
     position: absolute;
@@ -67,5 +71,11 @@
   .social{
     display: flex;
     margin: 0;
+    }
+}
+
+@media(min-width: 1200px){
+  .social{
+    margin-left: 257px;
     }
 }
