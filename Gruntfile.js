@@ -33,6 +33,14 @@ module.exports = function(grunt) {
         }
       }
     },
+    
+    uglify: {
+      script: {
+        files: {
+        "build/js/script.min.js": ["build/js/script.js"]
+        }
+      }
+    },
 
     svgstore: {
       options: {
@@ -143,6 +151,7 @@ module.exports = function(grunt) {
     "less",
     "postcss",
     "csso",
+    "uglify",
     "svgstore",
     "posthtml"
   ])
