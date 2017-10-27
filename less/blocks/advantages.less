@@ -7,39 +7,38 @@
   background-color: #81b3d2;
 
   &--triangle{
-  background-image: url("../img/bg-triangle.svg");
-  background-repeat: no-repeat;
-  background-position: 50% 0;
+    background-image: url("../img/bg-triangle.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
   }
+}
+.advantages__header{
+  padding-left: 25px;
+  padding-right: 25px;
+}
 
-  &__header{
-    padding-left: 25px;
-    padding-right: 25px;
-  }
+.advantages__caption{
+  margin: 76px 0 9px;
 
-  &__caption{
-    margin: 76px 0 9px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+}
 
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 26px;
-  }
+.advantages__caption--mod{
+  margin-top: 38px;
+}
 
-  &__caption--mod{
-    margin-top: 38px;
-  }
+.advantages__text{
+  margin: 15px 0 40px;
+}
 
-  &__text{
-    margin: 15px 0 40px;
-  }
+.advantages__text--mod{
+  margin-bottom: 39px;
+}
 
-  &__text--mod{
-    margin-bottom: 39px;
-  }
-
-  &__image img{
-    display: block;
-  }
+.advantages__image img{
+  display: block;
 }
 
 @media(min-width: 768px){
@@ -54,25 +53,25 @@
     &--triangle{
       background-image: none;
     }
+  }
 
-    &__header{
-      width: 256px;
-      padding: 0;
-    }
+  .advantages__header{
+    width: 256px;
+    padding: 0;
+  }
 
-    &__caption{
-      margin: 45px 52px 11px 53px;
+  .advantages__caption{
+    margin: 45px 52px 11px 53px;
 
-      font-size: 21px;
-    }
+    font-size: 21px;
+  }
 
-    &__text{
-      margin: 20px 45px 0;
-    }
+  .advantages__text{
+    margin: 20px 45px 0;
+  }
 
-    &__image{
-      margin-top: 0;
-    }
+  .advantages__image{
+    margin-top: 0;
   }
 }
 
@@ -80,27 +79,26 @@
   .advantages{
     height: 256px;
     overflow: hidden;
+  }
+  .advantages__header{
+    width: 400px;
+  }
 
-    &__header{
-      width: 400px;
-    }
+  .advantages__caption{
+    margin: 52px 124px 10px 125px;
 
-    &__caption{
-      margin: 52px 124px 10px 125px;
+    font-size: 21px;
+  }
 
-      font-size: 21px;
-    }
+  .advantages__text{
+    margin: 21px 65px 0;
+  }
 
-    &__text{
-      margin: 21px 65px 0;
-    }
-      
-    &__text--mod{
-      margin: 21px 90px 0;    
-    }
+  .advantages__text--mod{
+    margin: 21px 90px 0;
+  }
 
-    &__image img{
-      margin-top: -72px;
-    }
+  .advantages__image img{
+    margin-top: -72px;
   }
 }

@@ -4,81 +4,79 @@
   text-align: center;
 
   background-color: #ffffff;
+}
 
-  &__appeal{
-    margin-bottom: 19px;
+.search__appeal{
+  margin-bottom: 19px;
 
-    font-size: 21px;
-    font-weight: 700;
-    line-height: 26px;
-  }
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+}
 
-  &__text{
-    margin-bottom: 35px;
+.search__text{
+  margin-bottom: 35px;
 
-    line-height: 24px;
-  }
+  line-height: 24px;
+}
 
-  &__button{
-    display: block;
-    padding: 16px 45px;
+.search__button{
+  display: block;
+  padding: 16px 45px;
 
-    font-size: 21px;
-    font-weight: 700;
-    line-height: 26px;
-    color: #ffffff;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  color: #ffffff;
 
-    background-color: #81b3d2;
+  background-color: #81b3d2;
 
-    text-decoration: none;
-  }
+  text-decoration: none;
+}
 
-  &__button:hover{
-    background-color: #669ec0;
-  }
+.search__button:hover{
+  background-color: #669ec0;
+}
 
-  &__button:active{
-    color: rgba(255, 255, 255, 0.3);
-    background-color: #5496bd;
-  }
-    
-  &__button[disabled]{
-    background-color: #e5e5e5;  
-  }
+.search__button:active{
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
+}
+
+.search__button[disabled]{
+  background-color: #e5e5e5;
 }
 
 @media(min-width: 768px){
   .search{
     padding-bottom: 58px;
+  }
+  .search__appeal{
+    width: 300px;
+    margin: 49px auto 31px;
 
-    &__appeal{
-      width: 300px;
-      margin: 49px auto 31px;
+    font-size: 30px;
+  }
 
-      font-size: 30px;
-    }
+  .search__text{
+    width: 399px;
+    margin: 0 auto 42px;
 
-    &__text{
-      width: 399px;
-      margin: 0 auto 42px;
+    line-height: 24px;
+  }
 
-      line-height: 24px;
-    }
-
-    &__button{
-      width: 368px;
-      margin: 0 auto;
-    }
+  .search__button{
+    width: 368px;
+    margin: 0 auto;
   }
 }
 
 @media(min-width: 1200px){
   .search{
     padding-bottom: 66px;
-
-    &__text{
-      width: 397px;
-      margin-bottom: 47px;
-    }
+  }
+  .search__text{
+    width: 397px;
+    margin-bottom: 47px;
   }
 }

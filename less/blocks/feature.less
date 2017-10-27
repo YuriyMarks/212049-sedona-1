@@ -1,95 +1,91 @@
 .feature{
   padding: 1px 20px;
   background-color: #eeeeee;
+}
+.feature__list{
+  margin: 0;
+  padding: 0;
 
-  &__list{
-    margin: 0;
-    padding: 0;
+  text-align: center;
 
-    text-align: center;
+  list-style: none;
+}
 
-    list-style: none;
-  }
+.feature__item{
+  border-bottom: 1px solid #d6d6d6;
+}
 
-  &__item{
-    border-bottom: 1px solid #d6d6d6;
-  }
+.feature__item:nth-child(3){
+  border-bottom: none;
+}
 
-  &__item:nth-child(3){
-    border-bottom: none;
-  }
+.feature__caption{
+  margin-top: 25px;
+  margin-bottom: 9px;
 
-  &__caption{
-    margin-top: 25px;
-    margin-bottom: 9px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+}
 
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 26px;
-  }
+.feature__caption--mod{
+  margin-top: 27px;
+}
 
-  &__caption--mod{
-    margin-top: 27px;
-  }
+.feature__order{
+  display: block;
+  margin-bottom: 15px;
+}
 
-  &__order{
-    display: block;
-    margin-bottom: 15px;
-  }
-
-  &__text{
-    margin-bottom: 27px;
-    padding: 0 15px;
-  }
+.feature__text{
+  margin-bottom: 27px;
+  padding: 0 15px;
 }
 
 @media(min-width: 768px){
   .feature{
     padding: 0;
+  }
+  .feature__list{
+    display: flex;
+    padding-top: 45px;
+  }
 
-    &__list{
-      display: flex;
-      padding-top: 45px;
-    }
+  .feature__item{
+    width: 256px;
 
-    &__item{
-      width: 256px;
+    border: none;
+  }
 
-      border: none;
-    } 
+  .feature__caption{
+    width: 130px;
+    margin: 0 auto 10px;
 
-    &__caption{
-      width: 130px;
-      margin: 0 auto 10px;
+    font-size: 21px;
+  }
 
-      font-size: 21px;
-    }
+  .feature__text{
+    width: 158px;
+    margin: 21px auto 44px;
+  }
 
-    &__text{
-      width: 158px;
-      margin: 21px auto 44px;
-    }
-      
-    &__text--mod{
-      width: 149px;
-    }
+  .feature__text--mod{
+    width: 149px;
   }
 }
 
 @media(min-width: 1200px){
-  .feature{
 
-    &__item{
-      width: 400px;
-    }
+  .feature__item{
+    width: 400px;
+  }
 
-    &__text{
-      width: 295px;
-      margin: 21px auto 65px;
-    }
+  .feature__text{
+    width: 295px;
+    margin: 21px auto 65px;
+  }
 
-    &__text--mod{
-      width: 265px;
-    }
+  .feature__text--mod{
+    width: 265px;
   }
 }

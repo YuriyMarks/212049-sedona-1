@@ -2,35 +2,30 @@
   display: flex;
   width: 84px;
   margin-top: 8px;
+}
+.likes__like{
+  width: 22px;
+  height: 20px;
+  margin-right: 15px;
 
-  &__like{
-    width: 22px;
-    height: 20px;
-    margin-right: 15px;
-
-    cursor: pointer;
-  }
+  cursor: pointer;
 }
 
 @media(min-width: 768px){
   .likes{
     margin-top: 0;
+  }
+  .likes__like{
+    margin-right: 9px;
 
-    &__like{
-      margin-right: 9px;
-
-      fill: #a9a9a9;
-    }
+    fill: #a9a9a9;
   }
 }
 
 @media(min-width: 1200px){
-  .likes{
+  .likes__like{
+    margin-right: 9px;
 
-    &__like{
-      margin-right: 9px;
-
-      fill: #ffffff;
-    }
+    fill: #ffffff;
   }
 }

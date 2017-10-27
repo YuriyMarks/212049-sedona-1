@@ -33,11 +33,12 @@ module.exports = function(grunt) {
         }
       }
     },
-    
+
     uglify: {
       script: {
         files: {
-        "build/js/script.min.js": ["build/js/script.js"]
+        "build/js/script.min.js": ["build/js/script.js"],
+        "build/js/picturefill.min.js": ["build/js/picturefill.js"]
         }
       }
     },
