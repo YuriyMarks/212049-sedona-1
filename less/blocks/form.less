@@ -12,8 +12,7 @@
 }
 
 .form__item:nth-of-type(2){
-  margin-top: 26px;
-  border-top: none;
+  margin-top: 25px;
 }
 
 .form__caption{
@@ -325,7 +324,20 @@
   }
 
   .form__impression{
+    position: relative;
+      
     order: -1;
+  }
+    
+  .form__impression::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 26px;
+    left: 323px;
+    width: 1px;
+    height: 292px;
+    background-color: #dbdbdb;
   }
 
   .form__impression h3{
@@ -346,7 +358,62 @@
   }
 
   .form__contacts h3{
+    position: relative;
     margin-bottom: 27px;
+  }
+
+  .form__contacts h3::before,
+  .form__sight h3::before,
+  .form__emotions h3::before  {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 125px;
+    height: 1px;
+    
+    background-color: #dbdbdb;
+  }
+
+  .form__contacts h3::after,
+  .form__sight h3::after,
+  .form__emotions h3::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 123px;
+    height: 1px;
+    
+    background-color: #dbdbdb;
+  }
+
+  .form__contacts h3::before{
+    top: 12px;
+    left: 0;
+  }
+
+  .form__contacts h3::after{
+    top: 12px;
+    left: 525px;
+  }
+
+  .form__sight h3::before{
+    top: 25px;
+    left: -179px;
+  }
+
+  .form__sight h3::after{
+    top: 25px;
+    left: 346px;
+  }
+
+  .form__emotions h3::before{
+    top: 33px;
+    left: 0;
+  }
+
+  .form__emotions h3::after{
+    top: 33px;
+    left: 525px;
   }
 
   .form__introduce{
@@ -378,12 +445,13 @@
     display: block;
     position: absolute;
     top: 343px;
-    left: 483px;
+    left: 482px;
   }
 
   .form__item:nth-of-type(4) h3{
     width: 290px;
     margin: 0 auto;
+    position: relative;
   }
 
   .form__textarea{
@@ -431,6 +499,46 @@
 
   .form__emotions{
     margin-left: 120px;
+  }
+    
+  .form__impression::after{
+    left: 476px;
+  }
+    
+  .form__contacts h3::before{
+    width: 279px;
+    top: 12px;
+    left: 1px;
+  }
+
+  .form__contacts h3::after{
+    width: 279px;
+    top: 12px;
+    left: 682px;
+  }
+
+  .form__sight h3::before{
+    width: 281px;
+    top: 26px;
+    left: -334px;
+  }
+
+  .form__sight h3::after{
+    width: 281px;
+    top: 26px;
+    left: 347px;
+  }
+
+  .form__emotions h3::before{
+    width: 280px;
+    top: 32px;
+    left: 0;
+  }
+
+  .form__emotions h3::after{
+    width: 279px;
+    top: 32px;
+    left: 681px;
   }
 
   .form__wrapper-contacts:nth-child(2){
@@ -528,7 +636,7 @@
   .form__obligatory{
     position: absolute;
     top: 341px;
-    left: 795px;
+    left: 794px;
   }
 
   .form__hide{
