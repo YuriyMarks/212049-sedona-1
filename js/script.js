@@ -1,7 +1,5 @@
 var menuButton = document.querySelector(".button-nav");
-
 var menu = document.querySelector(".nav");
-
 var menuLogo = document.querySelector(".header-page__image");
 
 menu.classList.add("nav--close");
