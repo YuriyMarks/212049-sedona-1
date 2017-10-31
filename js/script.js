@@ -1,6 +1,7 @@
 var menuButton = document.querySelector(".button-nav");
 var menu = document.querySelector(".nav");
 var menuLogo = document.querySelector(".header-page__image");
+var popupFailure = document.querySelector(".popup-failure");
 
 menu.classList.add("nav--close");
 menuButton.classList.remove("button-nav--open");
